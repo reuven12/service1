@@ -1,0 +1,61 @@
+{
+  "name": "service1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build-ts && node dist/app",
+    "build-ts": "tsc",
+    "dev": "nodemon src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reuven12/service1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reuven12/service1/issues"
+  },
+  "homepage": "https://github.com/reuven12/service1#readme",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "express": "^4.17.1",
+    "mocha": "^9.1.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^16.6.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2",
+    "ts-node": "^10.2.0",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.9.10"
+  }
+}
