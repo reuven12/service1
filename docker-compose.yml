@@ -1,0 +1,25 @@
+version: "3"
+services:
+  servise1:
+    image: runmoovit
+    restart: always
+    ports: 
+      - '3005:3005'
+    environment: 
+      PORT: 3005
+      service2: 3000
+
+  service2:
+    image: moovit
+    ports: 
+      - '3000:3000'
+    environment: 
+      MONGOIP: mongo
+      MONGOPORT: 27017
+      PORT: 3000
+  
+  mongo:
+    image: mongo
+    restart: always
+    ports: 
+      - 27017:27017

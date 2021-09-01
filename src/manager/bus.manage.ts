@@ -1,7 +1,11 @@
 import { Request, Response } from 'express';
 import Http from 'axios';
 
-const project: string = 'http://localhost:3000/api/buses';
+require('dotenv').config();
+
+const moovit = process.env.SERVICE2;
+const port = process.env.PORTMOOVIT;
+const project: string = `http://${moovit}:${port}/api/buses`;
 
 export const getBuses = async (_req: Request, res: Response) => {
   try {
