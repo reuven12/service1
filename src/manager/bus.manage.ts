@@ -18,7 +18,7 @@ export const getBuses = async (_req: Request, res: Response) => {
 
 export const getBus = async (req: Request, res: Response) => {
   try {
-    const getbus = await Http.get(`${project}/readBus/${req.params.busColor}`);
+    const getbus = await Http.get(`${project}/readBus/${req.body.lineNumber}`);
     res.send(getbus.data);
   } catch (err) {
     res.send(err);
