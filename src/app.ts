@@ -13,5 +13,5 @@ app.use(morgan('dev'));
 app.use('/api/service1/buses', busRouter);
 app.use('/api/service1/stations', stationRouter);
 
-const port = process.env.PORT;
+const port = process.env.PORT || 3005;
 app.listen(port);
